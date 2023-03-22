@@ -21,15 +21,24 @@ public class HomeWork2 {
         String Text = stringOfRepeated("TE$T");
         writeTextToFile(Text);
 
+       /*3*.Напишите метод, который определит тип (расширение) файлов из
+        текущей папки и выведет в консоль результат вида:
+        1 Расширение файла: txt
+        2 Расширение файла: pdf
+        3 Расширение файла:
+        4 Расширение файла: jpg
+        */
 
         File file = new File("/G:\\учеба\\JAVA_Seminar\\program\\src\\main\\java\\HomeWork2\\Task2.txt");
         System.out.println("Расширение файла: " + getFileExtension(file));
         File file1 = new File("G:\\учеба\\JAVA_Seminar\\program\\src\\main\\java\\HomeWork2\\.gitignore");
         System.out.println("Расширение файла: " + getFileExtension(file1));
+        File file2 = new File("G:\\учеба\\JAVA_Seminar\\program\\src\\main\\java\\HomeWork2\\HomeWork2.java");
+        System.out.println("Расширение файла: " + getFileExtension(file2));
 
-//        Расширение файла: txt
-//        Расширение файла:
-
+//          Расширение файла: txt
+//          Расширение файла:
+//          Расширение файла: java
     }
 
     private static String palindromeText(String s) {
